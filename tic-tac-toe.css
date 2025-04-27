@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image:url('src/tic-tac-toe.jpg');
+}
+h1{
+    text-align: center;
+    margin: 10px;
+    color: greenyellow;
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-weight:700;
+    font-style: normal;
+    text-shadow: 0 0 3px #ff0000;
+}
+.gameContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.grid{
+    width: 60vw;
+    margin-left: 20px;
+    display: grid;
+    grid-template-columns:repeat(3,10vw) ;
+    grid-template-rows:repeat(3,10vw) ;
+    position: relative;
+}
+.result{
+    width: 30vw;
+}
+#reset{
+    height: 30px;
+    width: 45px;
+    cursor: pointer;
+}
+.gif{
+    height: 50%;
+    width: 0%;
+    transition: width 1s ease-in-out;
+}
+.box{
+    border: 1px solid black;
+    font-size: 8vw;
+    text-align: center;
+    
+    
+}
+.box:hover{
+    border: 1px solid black;
+    font-size: 8vw;
+    text-align: center;
+    background-color: rgb(255, 255, 213);
+    cursor: pointer;
+}
+.xyz{
+    color:white;
+    font-size: 50px;
+    -webkit-text-stroke-width: 1.5px ;
+    -webkit-text-stroke-color: black;
+}
+#reset{
+    height: 25px;
+    width: 75px;
+    background-color: rgb(1, 1, 253);
+    color: whitesmoke;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+.info{
+    font-size: 25px;
+    font-weight: 700;
+    color: red;
+    -webkit-text-stroke-width: 0.5px ;
+    -webkit-text-stroke-color:black
+    ;
+}
+.last{
+    font-size: 40px;
+    font-weight: 700;
+    color:rgb(82, 219, 82);
+    -webkit-text-stroke-width: 1px ;
+    -webkit-text-stroke-color:black
+    ;
+}
+.line{
+     background-color: black;
+     height: 3px;
+        width: 0vw;
+        position: absolute;
+        background-color: orange;
+        transition: width 0s ease-in-out;
+    
+    
+}
